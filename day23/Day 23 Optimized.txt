@@ -1,0 +1,52 @@
+a = 1
+b = 105700
+c = 122000
+d = 0
+e = 0
+f = 1
+g = 0
+h = 0
+
+loop do
+	d = 2
+	e = 2
+	while g != 0
+		while g != 0
+		// Cut out the G/E/B Loop, then add the B incrementing, then add the H counting
+		puts "B - #{b} - C - #{c} - E - #{e} - G - #{g} - H - #{h}"
+			g = d
+			g = g * e
+			g = g - b
+		
+			if g == 0
+				f = 0
+			end
+	
+			e = e + 1
+			g = e
+			g = g - b
+		end
+		d = d + 1
+		g = d
+		g = g - b
+	end
+
+	if f == 0
+		h = h + 1
+puts "New h - #{h}"
+	end
+
+	g = b
+	g = g - c
+
+	if g == 0
+		break
+	else
+		b = b + 17
+	end
+end
+
+
+
+
+
